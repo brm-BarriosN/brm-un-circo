@@ -1,0 +1,54 @@
+//-Layout Base
+extends ../templates/base.pug
+
+//-Etiqueta Title
+block title
+	title Circo Rexona Seleccion de juegos
+
+//-Etiqueta Metadescription
+block description
+	meta(name="description", content="Circo Rexona Seleccion de juegos" )
+
+
+block content
+	section.container-fluid
+		div.row
+			div.juegos
+				div.rexona-logo
+					+image('circo-rexona-logo-min.png', 'Circo Rexona')
+
+				div.rexona-titulo
+					h3.
+						JUEGOS
+
+					P.
+						Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+
+				div.juegos-seleccion
+					div.row
+						div.juego.esc-one
+							+image('escenario-01.png', 'Juego 1')
+							a(href="#")
+								|JUGAR
+								span.glyphicon.glyphicon-chevron-right
+						div.juego.esc-two
+							+image('escenario-01.png', 'Juego 2')
+							a(href="#")
+								|JUGAR
+								span.glyphicon.glyphicon-chevron-right
+				div.juegos-rexona-form
+					form#juegis.col-juegos
+						div.row
+							div.input.separador-select
+								label(for="codigo")
+									|ÍNGRESA TU CÓDIGO AQUÍ
+								input(type="text" id="codigo" name="codigo")
+							div.instruccion-codigo.separador-select
+								span
+									p
+										|Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.
+					div.enviar.separador-button
+						input(type="submit" value="COMPARTIR")
+
+
+

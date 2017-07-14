@@ -1,0 +1,32 @@
+div.modal(tabindex="-1" role="dialog" aria-labelledby="modal-rexona")
+	div.modal-dialog(role="document")
+		div.modal-content
+			div.modal-header
+				button.close(type="button" data-dismiss="modal" aria-label="Close")
+					span(aria-hidden="true") &times;
+			
+			div.modal-body
+				
+				-if(modal == "Registro")
+
+					div.modal-registro
+						+image('warning-icon.png', 'Icono de Advertencia')
+						
+						p.
+							Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+				
+				-if(modal == "Circo-rexona")
+
+					div.modal-juego
+						+image('icon-inst-modal.png', 'Icono de instrucciones')(class="info")
+					
+						h3.
+							INSTRUCCIONES
+						
+						p.
+							DALE PLAY PARA COMENZAR A JUGAR
+
+						+image('keys-instruciones.png', 'Flechas de movimiento')
+						
+						p.
+							PARA MOVERTE UTILIZA LAS FLECHAS SEÑALADAS EN LA PARTE INFERIOR DEL JUEGO.

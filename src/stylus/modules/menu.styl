@@ -1,0 +1,64 @@
+.menu
+	background-color white
+	height 100%
+	left -80%
+	position absolute
+	width 80%
+	z-index 5
+	transition all ease-in-out 0.3s
+	max-width 50rem
+	
+	&.active
+		left 0
+		
+		.menu-rexona
+			
+			.hamburguesa
+				right 0
+				transition all ease-in-out 0.3s
+
+	.menu-rexona
+		
+		
+		.hamburguesa
+			position absolute
+			right -5.5rem
+			top 0.8rem
+			
+			button
+				background-color transparent
+				border 0
+				
+				&:focus, &:active
+					outline 0
+			
+		.circorex
+			margin-top 5rem
+			text-align center
+			
+				
+			img
+				width 90%
+			
+		.menu-one
+			list-style-type initial
+			padding-left 4rem
+			
+			li
+				list-style-image url("../images/bullet.png")
+				margin-top 2rem
+				padding-left 1rem
+				
+				&:first-child
+					margin-top 0
+				
+				a
+					color #37498d
+					font-size 2rem
+					font-weight bold
+					text-decoration none
+					
+					&:hover
+						color #6fcedb
+				
+			

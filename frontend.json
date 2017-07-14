@@ -1,0 +1,25 @@
+{
+  "name": "circo-rexona",
+  "title": "Circo Rexona",
+  "description": "Circo Rexona",
+  "version": "0.1.0",
+  "author": {
+    "name": "Nicolás Barrios",
+    "email": "nicolas.barrios@brm.com.co"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cortesc/HTML.git"
+  },
+  "bugs": "https://github.com/cortesc/HTML/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/cortesc/HTML/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "*"
+  },
+  "keywords": []
+}

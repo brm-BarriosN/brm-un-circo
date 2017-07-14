@@ -1,0 +1,40 @@
+//-Layout Base
+extends ../templates/base.pug
+
+//-Etiqueta Title
+block title
+	-var modal = "Circo-rexona";
+	title Circo Rexona Juego
+
+//-Etiqueta Metadescription
+block description
+	meta(name="description", content="Circo Rexona Juego" )
+
+
+block content
+
+	section.container-fluid.juego-rexona
+			div.row
+				div.rexona-logo
+					+image('circo-rexona-logo-min.png', 'Circo Rexona')
+
+				div.rexona-titulo
+					h3.
+						JUEGOS
+				div.juego-rexona-embed
+					+image('escenario-01.png', 'Juego 2')
+				div.instrucciones-juego-rexona
+					+image('icon-inst-modal.png', 'Icono de instrucciones')
+					p.
+						Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.
+				//- div.instrucciones-juego-controles
+				//- 	+image('purple-arrows.png', 'Flechas de instruccion')
+
+
+	//Modal
+	include ../templates/partials/modal
+	///-Modal
+						
+block Scripts
+	//-Acá se ponen js que solo vayan en ésta página
+

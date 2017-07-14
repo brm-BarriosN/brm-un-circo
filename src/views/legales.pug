@@ -1,0 +1,36 @@
+//-Layout Base
+extends ../templates/base.pug
+
+//-Etiqueta Title
+block title
+	title Circo Rexona Legales
+
+//-Etiqueta Metadescription
+block description
+	meta(name="description", content="Circo Rexona Legales" )
+
+
+block content
+	section.container-fluid.legales
+		div.row
+			div.rexona-logo
+				+image('circo-rexona-logo-min.png', 'Circo Rexona')
+
+			div.rexona-titulo
+				h3.
+					TERMINOS Y CONDICIONES
+
+			div.rexona-legales
+				p.
+					This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. 
+
+					Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+
+
+
+	
+	
+
+block Scripts
+	//-Acá se ponen js que solo vayan en ésta página
+

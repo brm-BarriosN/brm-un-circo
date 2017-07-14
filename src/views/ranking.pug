@@ -1,0 +1,69 @@
+//-Layout Base
+extends ../templates/base.pug
+
+//-Etiqueta Title
+block title
+	-var titulo = "Ranking";
+	title Circo Rexona Ranking
+
+//-Etiqueta Metadescription
+block description
+	meta(name="description", content="Circo Rexona Ranking" )
+
+
+block content
+	section.container-fluid.ranking
+		div.row
+			div.rexona-logo
+				+image('circo-rexona-logo-min.png', 'Circo Rexona')
+
+			div.rexona-titulo
+				h3.
+					RANKING
+
+				P.
+					Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+			div.rankings
+				div.primer-puesto
+					+image('profile.jpg', 'Primer puesto')
+					ul.menu-one
+						li.menu-one-registro
+							span.
+								Maria alexandra perez martinez
+						li.menu-one-home
+							p.
+								254589
+						li.menu-one-demo
+							p.
+								Puesto 15
+			div.ranking-general
+				table
+					tr
+						th.
+							RANK
+						th.
+							NOMBRE
+						th.
+							PUNTAJE
+
+					-for(x = 0; x < 20; x++)
+						tr
+							td.
+								15
+							td.
+								Nicolás Barrios
+							td.
+								4856985
+
+
+
+
+
+
+
+	
+	
+
+block Scripts
+	//-Acá se ponen js que solo vayan en ésta página
+

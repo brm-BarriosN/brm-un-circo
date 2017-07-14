@@ -1,0 +1,66 @@
+//-Layout Base
+extends ../templates/base.pug
+
+//-Etiqueta Title
+block title
+	-var modal = "Registro";
+	title Circo Rexona Registro
+
+//-Etiqueta Metadescription
+block description
+	meta(name="description", content="Circo Rexona Registro" )
+
+
+block content
+
+	section.container-fluid.registrarse
+		div.row
+			div.rexona-logo
+				+image('circo-rexona-logo-min.png', 'Circo Rexona')
+
+			div.rexona-titulo
+				h3.
+					REGÍSTRATE
+
+				P.
+					Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+			form#registro.col-registro
+				div.registro-rexona-form
+					div.row
+						div.input
+							label(for="name")
+								|NOMBRE
+							input(type="text" id="name" name="name")
+						div.input
+							label(for="apellido")
+								|APELLIDO
+							input(type="text" id="apellido" name="apellido")
+						div.input
+							label(for="mail")
+								|MAIL
+							input(type="text" id="mail" name="mail")
+						div.input
+							label(for="celular")
+								|CELULAR
+							input(type="text" id="celular" name="celular")
+						div.input
+							label(for="ciudad")
+								|CIUDAD
+							input(type="text" id="ciudad" name="ciudad")
+						div.legales-check
+							input(type="checkbox" id="legales" name="legales")
+							label(for="legales")
+								|He leído y acepto los 
+								a(href="#")
+									|términos y condiciones
+								
+						div.enviar
+							button() ENVIAR
+	
+
+	//Modal
+	include ../templates/partials/modal
+	///-Modal
+block Scripts
+	//-Acá se ponen js que solo vayan en ésta página
+
