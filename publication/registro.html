@@ -62,27 +62,37 @@
           <div class="row">
             <div class="input">
               <label for="name">NOMBRE</label>
-              <input type="text" id="name" name="name">
+              <input type="text" id="name" name="name"><span class="authError">*Campo requerido</span>
             </div>
             <div class="input">
               <label for="apellido">APELLIDO</label>
-              <input type="text" id="apellido" name="apellido">
+              <input type="text" id="apellido" name="apellido"><span class="authError">*Campo requerido</span>
             </div>
             <div class="input">
               <label for="mail">MAIL</label>
-              <input type="text" id="mail" name="mail">
+              <input type="text" id="mail" name="mail"><span class="authError">*Campo requerido</span>
             </div>
             <div class="input">
               <label for="celular">CELULAR</label>
-              <input type="text" id="celular" name="celular">
+              <input type="text" id="celular" name="celular"><span class="authError">*Campo requerido</span>
             </div>
-            <div class="input">
+            <div class="input sel-op">
+              <label for="Departamento">DEPARTAMENTO	</label>
+              <select id="Departamento" name="Departamento">
+                <option value="Seleccione departamento"></option>
+                <option value="1">Bogotá</option>
+              </select><span class="authError">*Campo requerido</span>
+            </div>
+            <div class="input sel-op">
               <label for="ciudad">CIUDAD</label>
-              <input type="text" id="ciudad" name="ciudad">
+              <select id="ciudad" name="ciudad">
+                <option value="Seleccione departamento"></option>
+                <option value="1">Bogotá</option>
+              </select><span class="authError">*Campo requerido</span>
             </div>
             <div class="legales-check">
               <input type="checkbox" id="legales" name="legales">
-              <label for="legales">He leído y acepto los <a href="#">términos y condiciones</a></label>
+              <label for="legales">He leído y acepto los <a href="#">términos y condiciones</a></label><span class="authError">*Campo requerido</span>
             </div>
             <div class="enviar">
               <button>ENVIAR</button>
